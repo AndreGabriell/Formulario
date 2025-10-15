@@ -1,0 +1,129 @@
+body{
+    text-align: center;
+    justify-content: center;
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+label{
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 5;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+fieldset{
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 77vw;
+}
+form{
+    background-image: linear-gradient(white,blue);
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+.uf{
+    display: inline;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+button{
+    width: 8vw;
+    height: 3vh;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 20px;
+}
+p{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    display: flex;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 70vw;
+    height: 3vh;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+option{
+    text-align: center;
+    display: inline;
+    margin: 0;
+    width: 100%;
+}
+div{
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    display: flex;
+}
+textarea{
+    background-color: aliceblue;
+    border: 1px solid;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border color 0.3s, box-shadow 0.3s;
+}
+legend{
+    font-weight: bold;
+    padding: 0 10px;
+}
+select{
+   width: 20vw;
+   border-radius: 50px;
+   margin: 20px;
+   text-align: center;
+}
+section{
+    height: 40vh;
+    border: 20%;
+    text-decoration: center;
+}
+option{
+    width: 20vw;
+    height: 4vh;
+    display: flex;
+}
+.titulo{
+    text-align: start;
+    display: flex;
+}
+.sex{
+    text-align: center;
+    width: 20vw;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.p1{
+    text-align: center;
+    
+}

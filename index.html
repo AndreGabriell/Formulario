@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="form1.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+<body>
+    <div>
+    <form method="post" action="https://formspree.io/f/xyznldaa">
+        <h1>Cadastro do Candidato</h1>
+        <fieldset class="p1">
+            <legend><strong>Informações Pessoais</strong></legend>
+            <label for="nome"> <strong>Nome:</strong>
+            <input type="text" name="Nome" id="Nome" size="60" maxlength="80" placeholder="Digite seu Nome" required></label>
+            <div><label for="Data de Nascimento"><strong><p>Data de Nascimento:</p></strong>
+            <input type="date" name="Data de Nascimento" id="Data de Nascimento" required>
+        </label></div>
+            <label for="Idade"><strong>Idade:</strong>
+                <input type="number" name="Idade" size="10" maxlength="3" required>
+            </label>
+            <div>
+            <label for="Sexo Biológico"><strong>Sexo Biológico:</strong></label>
+                <select name="sexo biologico" id="sexo biologico">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Prefiro não dizer">Prefiro não dizer</option>
+                </select>
+        </div>
+        <label for="CPF"><strong>CPF:</strong>
+            <input type="text" name="CPF" id="CPF" placeholder="000.000.000-00"
+            class="cpf"
+            required>
+        </label>
+        <label for="Estado Civil"></label><strong>Estado Civil:</strong>
+        <select name="Estado Civil" id="Estado Civil" required>
+        <option value="Solteiro">Solteiro(a)</option>
+        <option value="Casado">Casado(a)</option>
+        <option value="Viúvo">Viúvo(a)</option>
+        <option value="Divorciado">Divorciado(a)</option>
+        </select>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Informações de Contato</strong></legend>
+            <label for="Rua"><strong>Rua, n°:</strong>
+               <input type="text" name="Rua" id="Rua" required>
+            </label>
+            <div>
+            <label for="Complemento"><strong><p>Complemento:</p></strong>
+                <input type="text" name="Complemento" id="Complemento" required>
+            </label>
+            </div>
+            <div>
+            <label for="Bairro"><strong><p>Bairro:</p></strong>
+                <input type="text" name="Bairro" id="Bairro" required>
+            </label>
+            </div>
+            <label for="CEP"><strong>CEP:</strong>
+                <input type="text" name="CEP" id="CEP" placeholder="00000-000" 
+                class="cep"
+                required>
+            </label>
+            <label for="UF" class="uf"><strong>UF:</strong></label>
+            <select name="UF" id="UF">
+            <option value="SP">SP</option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AM">AM</option>
+            <option value="AP">AP</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MG">MG</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="PR">PR</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="RS">RS</option>
+            <option value="SC">SC</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+            </select>
+            <label for="Celular"><strong>Celular:</strong>
+                <input type="text" name="Celular" id="Celular" placeholder="00-00000-0000"
+                class="phone_with_ddd" required>
+            </label>
+            <div>
+            <label for="E-mail"><strong><p>E-mail:</p></strong>
+                <input type="text" name="E-mail" id="E-mail" required>
+            </label>
+            </div>
+            <div>
+            <label for="Comentários"><strong>Comentários:</strong>
+                    <textarea name="Comentários" id="Comentários" cols="40" rows="10" style="resize: none;"></textarea>
+            </label>
+        </div>
+        <p><button type="reset"><strong>Limpar</strong></button>
+        <button type="submit"><strong>Enviar</strong></button></p>
+        </fieldset>
+    </form>
+    <script>
+    $('.cep').mask('00000-000');
+    $('.cpf').mask('000.000.000-00', {reverse: false});
+    $('.phone_with_ddd').mask('(00) 0000-0000');
+    </script>
+    </div>
+</body>
+</html>
